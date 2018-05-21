@@ -48,7 +48,7 @@ namespace Litery
             chartLetters.Series["f(x)"].Enabled = true;
             chartLetters.Visible = true;
 
-            string[] letters_labels = new string[statistic[0].letters.Count];//tu jest na sztywno 0 czyli zadziała tylko dla polskiego dla innych języków się wywali program trzeba obsłużyć
+            string[] letters_labels = new string[statistic.Max(x => x.letters.Count)];//tu jest na sztywno 0 czyli zadziała tylko dla polskiego dla innych języków się wywali program trzeba obsłużyć
 
             //przygotowanie osi x aby były literami z pliku
             foreach (var letterStatistic in statistic)
