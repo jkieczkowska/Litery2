@@ -1,0 +1,42 @@
+E:\MGR3\Proj Grabowski\Litery\Litery\obj\x86\Debug\Litery.Form1.resources
+E:\MGR3\Proj Grabowski\Litery\Litery\obj\x86\Debug\Litery.Properties.Resources.resources
+E:\MGR3\Proj Grabowski\Litery\Litery\obj\x86\Debug\Litery.csproj.GenerateResource.Cache
+E:\MGR3\Proj Grabowski\Litery\Litery\bin\Debug\Litery.exe
+E:\MGR3\Proj Grabowski\Litery\Litery\bin\Debug\Litery.pdb
+E:\MGR3\Proj Grabowski\Litery\Litery\obj\x86\Debug\Litery.exe
+E:\MGR3\Proj Grabowski\Litery\Litery\obj\x86\Debug\Litery.pdb
+E:\MGR3\Proj Grabowski\Litery\Litery\obj\x86\Debug\Litery.csprojResolveAssemblyReference.cache
+E:\MGR3\Proj Grabowski\Litery\Litery\bin\Debug\Litery.exe.config
+E:\MGR3\Proj Grabowski\Litery\Litery\obj\x86\Debug\Litery.Statistic.resources
+C:\Users\Justyna\Desktop\Litery\Litery\bin\Debug\Litery.exe.config
+C:\Users\Justyna\Desktop\Litery\Litery\obj\x86\Debug\Litery.exe
+C:\Users\Justyna\Desktop\Litery\Litery\obj\x86\Debug\Litery.pdb
+C:\Users\Justyna\Desktop\Litery\Litery\bin\Debug\Litery.exe
+C:\Users\Justyna\Desktop\Litery\Litery\bin\Debug\Litery.pdb
+C:\Users\Justyna\Desktop\Litery\Litery\obj\x86\Debug\Litery.csprojResolveAssemblyReference.cache
+C:\Users\Justyna\Desktop\Litery\Litery\obj\x86\Debug\Litery.Form1.resources
+C:\Users\Justyna\Desktop\Litery\Litery\obj\x86\Debug\Litery.Properties.Resources.resources
+C:\Users\Justyna\Desktop\Litery\Litery\obj\x86\Debug\Litery.Statistic.resources
+C:\Users\Justyna\Desktop\Litery\Litery\obj\x86\Debug\Litery.csproj.GenerateResource.cache
+C:\Users\Justyna\Desktop\Litery\Litery\obj\x86\Debug\Litery.csproj.CoreCompileInputs.cache
+D:\Dokumenty\Litery\Litery\bin\Debug\Litery.exe.config
+D:\Dokumenty\Litery\Litery\bin\Debug\Litery.exe
+D:\Dokumenty\Litery\Litery\bin\Debug\Litery.pdb
+D:\Dokumenty\Litery\Litery\obj\x86\Debug\Litery.csprojResolveAssemblyReference.cache
+D:\Dokumenty\Litery\Litery\obj\x86\Debug\Litery.Form1.resources
+D:\Dokumenty\Litery\Litery\obj\x86\Debug\Litery.Properties.Resources.resources
+D:\Dokumenty\Litery\Litery\obj\x86\Debug\Litery.Statistic.resources
+D:\Dokumenty\Litery\Litery\obj\x86\Debug\Litery.csproj.GenerateResource.Cache
+D:\Dokumenty\Litery\Litery\obj\x86\Debug\Litery.exe
+D:\Dokumenty\Litery\Litery\obj\x86\Debug\Litery.pdb
+C:\Users\Justyna\Desktop\Litery (2)\Litery\bin\Debug\Litery.exe.config
+C:\Users\Justyna\Desktop\Litery (2)\Litery\bin\Debug\Litery.exe
+C:\Users\Justyna\Desktop\Litery (2)\Litery\bin\Debug\Litery.pdb
+C:\Users\Justyna\Desktop\Litery (2)\Litery\obj\x86\Debug\Litery.csprojResolveAssemblyReference.cache
+C:\Users\Justyna\Desktop\Litery (2)\Litery\obj\x86\Debug\Litery.Form1.resources
+C:\Users\Justyna\Desktop\Litery (2)\Litery\obj\x86\Debug\Litery.Properties.Resources.resources
+C:\Users\Justyna\Desktop\Litery (2)\Litery\obj\x86\Debug\Litery.Statistic.resources
+C:\Users\Justyna\Desktop\Litery (2)\Litery\obj\x86\Debug\Litery.csproj.GenerateResource.cache
+C:\Users\Justyna\Desktop\Litery (2)\Litery\obj\x86\Debug\Litery.csproj.CoreCompileInputs.cache
+C:\Users\Justyna\Desktop\Litery (2)\Litery\obj\x86\Debug\Litery.exe
+C:\Users\Justyna\Desktop\Litery (2)\Litery\obj\x86\Debug\Litery.pdb
