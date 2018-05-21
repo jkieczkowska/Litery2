@@ -21,11 +21,12 @@ namespace Litery
         public void ShowChart()
         {
             
-            chartLetters.ChartAreas[0].AxisX.CustomLabels.Clear();
             chartLetters.Series["f(x)"].SetDefault(true);
             chartLetters.Series["f(x)"].Enabled = true;
             chartLetters.Visible = true;
-
+            
+            chartLetters.ChartAreas[0].AxisX.CustomLabels.Clear();
+            chartLetters.Series["f(x)"].Points.Clear();
             
             var selectedLanguage = StatisticList.Find(x => x.Language == comboBoxLanguages.SelectedItem.ToString());
             /*Wyświetl wszystkie:  string[] letters_labels = new string[StatisticList.Max(x => x.letters.Count)];//tu jest na sztywno 0 czyli zadziała tylko dla polskiego dla innych języków się wywali program trzeba obsłużyć
