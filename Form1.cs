@@ -45,10 +45,12 @@ namespace Litery
                 try
                 {
                     myStream = new StreamReader(openFileDialog1.FileName, Encoding.Default);
+                    char previousLetter = ' ';
                     do
                     {
                         var ch = (char)myStream.Read();
-                        selectedLanguage.Count(ch);
+                        selectedLanguage.Count(ch, previousLetter);
+                        previousLetter = ch;
                     }
                     while (!myStream.EndOfStream);
                 }
@@ -68,6 +70,12 @@ namespace Litery
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonFindLanguage_Click(object sender, EventArgs e)
+        {
+            var findDialog = new FindLanguage(statistic);
+            findDialog.ShowDialog();
         }
     }
 }
