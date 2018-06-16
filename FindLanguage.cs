@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Windows.Forms.DataVisualization.Charting;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -14,6 +15,92 @@ namespace Litery
     {
         private List<LetterStatistic> StatisticList;
         private LetterStatistic textToFindStatistic;
+
+        private void ClearChart()
+        {
+            chartLetters.ChartAreas[0].AxisX.CustomLabels.Clear();
+            chartLetters.Series["EN"].Points.Clear();
+            chartLetters.Series["DE"].Points.Clear();
+            chartLetters.Series["PL"].Points.Clear();
+
+        }
+
+        public void ShowChart(Dictionary<LetterNr, List<double>> freqMap)
+        {
+
+            chartLetters.Series["Searched"].SetDefault(true);
+            chartLetters.Series["EN"].SetDefault(true);
+            chartLetters.Series["DE"].SetDefault(true);
+            chartLetters.Series["PL"].SetDefault(true);
+
+            chartLetters.Series["Searched"].Enabled = true;
+            chartLetters.Series["EN"].Enabled = true;
+            chartLetters.Series["DE"].Enabled = true;
+            chartLetters.Series["PL"].Enabled = true;
+
+            chartLetters.Visible = true;
+
+            string[] letters_labels = new string[freqMap.Count];
+            int i = 0;
+            foreach (var pair in freqMap)
+            {
+                letters_labels[i] = pair.Key.Name.ToString();
+                i++;
+            }
+
+            int start_offset = -5;
+            int end_offset = 5;
+            foreach (var letterLabel in letters_labels)
+            {
+                CustomLabel letter = new CustomLabel(start_offset, end_offset, letterLabel, 0, LabelMarkStyle.None);
+                chartLetters.ChartAreas[0].AxisX.CustomLabels.Add(letter);
+                start_offset += 10;
+                end_offset += 10;
+            }
+
+            //wyświetlenie wartości
+
+            i = 0;
+            foreach (var pair in freqMap)
+            {
+                foreach(var lang in pair.Value)
+                {
+                    switch(pair.Value.IndexOf(lang))
+                    {
+                        case 0: chartLetters.Series["Searched"].Points.AddXY(i * 10, lang); break;
+                        case 1: chartLetters.Series["EN"].Points.AddXY(i * 10, lang); break;
+                        case 2: chartLetters.Series["DE"].Points.AddXY(i * 10, lang); break;
+                        case 3: chartLetters.Series["PL"].Points.AddXY(i * 10, lang); break;
+                    }
+                  
+                }
+                i++;
+            }
+
+
+            chartLetters.Series["Searched"].ChartType = SeriesChartType.Line;
+            chartLetters.Series["EN"].ChartType = SeriesChartType.Line;
+            chartLetters.Series["DE"].ChartType = SeriesChartType.Line;
+            chartLetters.Series["PL"].ChartType = SeriesChartType.Line;
+
+
+            chartLetters.Series["Searched"].MarkerSize = 8;
+            chartLetters.Series["EN"].MarkerSize = 8;
+            chartLetters.Series["DE"].MarkerSize = 8;
+            chartLetters.Series["PL"].MarkerSize = 8;
+
+
+            chartLetters.Series["Searched"].MarkerStyle = MarkerStyle.Circle;
+            chartLetters.Series["EN"].MarkerStyle = MarkerStyle.Circle;
+            chartLetters.Series["DE"].MarkerStyle = MarkerStyle.Circle;
+            chartLetters.Series["PL"].MarkerStyle = MarkerStyle.Circle;
+
+            chartLetters.Show();
+
+            Controls.Add(chartLetters);
+            chartLetters.Show();
+
+        }
 
         public FindLanguage(List<LetterStatistic> statistic)
         {
@@ -109,6 +196,7 @@ namespace Litery
             if (textToFindStatistic == null)
                 return;
 
+            Dictionary<LetterNr, List<double>> freqMap = new Dictionary<LetterNr, List<double>>();
             foreach (var letter in GetLetters(textToFindStatistic))
             {
                 double letterFreq = (double)letter.Nr / (double)textToFindStatistic.NrLetters * 100;
@@ -127,11 +215,22 @@ namespace Litery
                 if (foundGermanLetter != null)
                     letterFreqGerman = (double)foundGermanLetter.Nr / (double)GetNrLetters(germanStatistic) * 100;
 
+                freqMap.Add(letter, new List<double>()
+                                            {
+                                                letterFreq,
+                                                letterFreqEnglish,
+                                                letterFreqGerman,
+                                                letterFreqPolish
+                                            });
+                
                 polishError += Math.Abs((letterFreq - letterFreqPolish));
                 englishError += Math.Abs((letterFreq - letterFreqEnglish));
                 germanError += Math.Abs((letterFreq - letterFreqGerman));
             }
 
+            ClearChart();
+            ShowChart(freqMap);
+            
             string sumOfFreq = "Polish " + polishError.ToString() +
                 " English " + englishError.ToString() +
                 " German " + germanError.ToString();

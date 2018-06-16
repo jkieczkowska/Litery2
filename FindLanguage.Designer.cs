@@ -28,10 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.chartLetters = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label3 = new System.Windows.Forms.Label();
             this.comboBoxMode = new System.Windows.Forms.ComboBox();
@@ -43,30 +46,43 @@
             // 
             // chartLetters
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chartLetters.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chartLetters.Legends.Add(legend2);
-            this.chartLetters.Location = new System.Drawing.Point(12, 76);
-            this.chartLetters.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            chartArea1.Name = "ChartArea1";
+            this.chartLetters.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartLetters.Legends.Add(legend1);
+            this.chartLetters.Location = new System.Drawing.Point(9, 62);
+            this.chartLetters.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.chartLetters.Name = "chartLetters";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Searched";
             series2.ChartArea = "ChartArea1";
             series2.Legend = "Legend1";
-            series2.Name = "f(x)";
+            series2.Name = "EN";
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "DE";
+            series4.ChartArea = "ChartArea1";
+            series4.Legend = "Legend1";
+            series4.Name = "PL";
+            this.chartLetters.Series.Add(series1);
             this.chartLetters.Series.Add(series2);
-            this.chartLetters.Size = new System.Drawing.Size(1191, 324);
+            this.chartLetters.Series.Add(series3);
+            this.chartLetters.Series.Add(series4);
+            this.chartLetters.Size = new System.Drawing.Size(893, 263);
             this.chartLetters.TabIndex = 9;
             this.chartLetters.Text = "chart1";
-            title2.Name = "Title1";
-            title2.Text = "Letters";
-            this.chartLetters.Titles.Add(title2);
+            title1.Name = "Title1";
+            title1.Text = "Letters";
+            this.chartLetters.Titles.Add(title1);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(204, 17);
+            this.label3.Location = new System.Drawing.Point(153, 14);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(43, 17);
+            this.label3.Size = new System.Drawing.Size(34, 13);
             this.label3.TabIndex = 13;
             this.label3.Text = "Mode";
             // 
@@ -74,19 +90,19 @@
             // 
             this.comboBoxMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxMode.FormattingEnabled = true;
-            this.comboBoxMode.Location = new System.Drawing.Point(253, 14);
-            this.comboBoxMode.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxMode.Location = new System.Drawing.Point(190, 11);
+            this.comboBoxMode.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxMode.Name = "comboBoxMode";
-            this.comboBoxMode.Size = new System.Drawing.Size(171, 24);
+            this.comboBoxMode.Size = new System.Drawing.Size(129, 21);
             this.comboBoxMode.TabIndex = 12;
             this.comboBoxMode.SelectedIndexChanged += new System.EventHandler(this.comboBoxMode_SelectedIndexChanged);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 11);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(9, 9);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(151, 27);
+            this.button1.Size = new System.Drawing.Size(113, 22);
             this.button1.TabIndex = 14;
             this.button1.Text = "Load text";
             this.button1.UseVisualStyleBackColor = true;
@@ -95,31 +111,34 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(483, 17);
+            this.label1.Location = new System.Drawing.Point(362, 14);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 17);
+            this.label1.Size = new System.Drawing.Size(0, 13);
             this.label1.TabIndex = 15;
             // 
             // textBox
             // 
-            this.textBox.Location = new System.Drawing.Point(458, 13);
+            this.textBox.Location = new System.Drawing.Point(344, 11);
+            this.textBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox.Multiline = true;
             this.textBox.Name = "textBox";
             this.textBox.ReadOnly = true;
-            this.textBox.Size = new System.Drawing.Size(708, 47);
+            this.textBox.Size = new System.Drawing.Size(532, 39);
             this.textBox.TabIndex = 16;
             // 
             // FindLanguage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1237, 435);
+            this.ClientSize = new System.Drawing.Size(928, 353);
             this.Controls.Add(this.textBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.comboBoxMode);
             this.Controls.Add(this.chartLetters);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FindLanguage";
             this.Text = "FindLanguage";
             ((System.ComponentModel.ISupportInitialize)(this.chartLetters)).EndInit();
