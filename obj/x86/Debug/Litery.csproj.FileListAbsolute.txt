@@ -40,3 +40,15 @@ C:\Users\Justyna\Desktop\Litery (2)\Litery\obj\x86\Debug\Litery.csproj.GenerateR
 C:\Users\Justyna\Desktop\Litery (2)\Litery\obj\x86\Debug\Litery.csproj.CoreCompileInputs.cache
 C:\Users\Justyna\Desktop\Litery (2)\Litery\obj\x86\Debug\Litery.exe
 C:\Users\Justyna\Desktop\Litery (2)\Litery\obj\x86\Debug\Litery.pdb
+C:\Users\Dawid\Source\Repos\Litery2\bin\Debug\Litery.exe.config
+C:\Users\Dawid\Source\Repos\Litery2\bin\Debug\Litery.exe
+C:\Users\Dawid\Source\Repos\Litery2\bin\Debug\Litery.pdb
+C:\Users\Dawid\Source\Repos\Litery2\obj\x86\Debug\Litery.csprojAssemblyReference.cache
+C:\Users\Dawid\Source\Repos\Litery2\obj\x86\Debug\Litery.FindLanguage.resources
+C:\Users\Dawid\Source\Repos\Litery2\obj\x86\Debug\Litery.Form1.resources
+C:\Users\Dawid\Source\Repos\Litery2\obj\x86\Debug\Litery.Properties.Resources.resources
+C:\Users\Dawid\Source\Repos\Litery2\obj\x86\Debug\Litery.Statistic.resources
+C:\Users\Dawid\Source\Repos\Litery2\obj\x86\Debug\Litery.csproj.GenerateResource.cache
+C:\Users\Dawid\Source\Repos\Litery2\obj\x86\Debug\Litery.csproj.CoreCompileInputs.cache
+C:\Users\Dawid\Source\Repos\Litery2\obj\x86\Debug\Litery.exe
+C:\Users\Dawid\Source\Repos\Litery2\obj\x86\Debug\Litery.pdb
